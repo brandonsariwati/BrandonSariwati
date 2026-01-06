@@ -338,7 +338,6 @@
     
     <div class="container">
         
-        <!-- ABOUT ME PAGE -->
         <div id="about" class="page">
             <div class="hero">
                 <h2>Welcome to My Portfolio</h2>
@@ -350,7 +349,7 @@
                 <p>Hello! I'm Brandon Sariwati, a digital marketing professional specializing in paid search advertising. This portfolio showcases my knowledge and expertise in PPC marketing.</p>
                 
                 <h3>What I Do</h3>
-                <p>I've spent the past five years working in paid search, managing multi-million-dollar budgets to capture high-intent users through Google Ads and Microsoft Ads. Most of my experience comes from regulated environments, where precision, compliance, and strong execution really matter. I focus on building and optimizing scalable search programs across Google Ads, Microsoft Ads, and SA360, using GA4 to understand what's actually driving results. Along the way, I've improved efficiency and conversion performance while building clean account structures, negative keyword frameworks, and QA processes that make accounts easier to scale and maintain. I also have direct client-facing experience, turning complex performance data into clear insights and practical strategies.</p>
+                <p>I've spent the past five years working in paid search, managing multi-million-dollar budgets to capture high-intent users through Google Ads and Microsoft Ads. Most of my experience comes from regulated environments, where precision, compliance, and strong execution really matter. I focus on building and optimizing scalable search programs across Google Ads, Microsoft Ads, and SA360, using GA4 to understand what's actually driving results.</p>
                 
                 <h3>My Expertise</h3>
                 <ul>
@@ -361,15 +360,9 @@
                     <li>Ad copy testing and asset iteration through approval workflows</li>
                     <li>GA4-based conversion tracking, analysis, and optimization</li>
                 </ul>
-                
-                <h3>Why This Portfolio?</h3>
-                <p>I created this website to share my knowledge with others learning paid search marketing. Whether you're a beginner or looking to level up your skills, you'll find practical guides and resources here.</p>
-                
-                <p><em>Explore the Paid Search Fundamentals section to start learning, or subscribe to my newsletter for regular insights!</em></p>
             </div>
         </div>
         
-        <!-- FUNDAMENTALS LANDING PAGE -->
         <div id="fundamentals" class="page">
             <div class="content-card">
                 <h2>Paid Search Fundamentals</h2>
@@ -479,36 +472,26 @@
             </div>
         </div>
         
-        <!-- ARTICLE PAGE (dynamic content loads here) -->
         <div id="article" class="page">
             <div class="content-card">
                 <button class="btn back-btn" onclick="showPage('fundamentals')">← Back to Topics</button>
-                <div id="article-content">
-                    <!-- Article content will be loaded here by JavaScript -->
-                </div>
+                <div id="article-content"></div>
             </div>
         </div>
         
-        <!-- NEWSLETTER PAGE -->
         <div id="newsletter" class="page">
             <div class="content-card">
                 <h2>Paid Search Newsletter</h2>
-                <p>Stay ahead of the curve with my weekly newsletter. I curate and summarize the most important paid search news, updates, and insights so you don't have to spend hours reading through multiple sources.</p>
+                <p>Stay ahead of the curve with my weekly newsletter. I curate and summarize the most important paid search news, updates, and insights.</p>
                 
                 <h3>What You'll Get</h3>
                 <ul>
-                    <li><strong>Weekly Summaries:</strong> The top 5-7 paid search news stories from across the industry</li>
-                    <li><strong>Quick Reads:</strong> AI-powered summaries that let you scan the key points in seconds</li>
-                    <li><strong>Platform Updates:</strong> Google Ads, Microsoft Ads, and other platform changes that matter</li>
-                    <li><strong>Industry Trends:</strong> Analysis of what's happening in the paid search world</li>
-                    <li><strong>Actionable Tips:</strong> Practical advice you can implement right away</li>
-                    <li><strong>Full Article Links:</strong> Access to original sources for deeper reading</li>
+                    <li><strong>Weekly Summaries:</strong> Top 5-7 paid search news stories</li>
+                    <li><strong>Quick Reads:</strong> AI-powered summaries</li>
+                    <li><strong>Platform Updates:</strong> Google Ads, Microsoft Ads changes</li>
+                    <li><strong>Industry Trends:</strong> Analysis of the paid search world</li>
+                    <li><strong>Actionable Tips:</strong> Practical advice to implement</li>
                 </ul>
-                
-                <h3>Why Subscribe?</h3>
-                <p>The paid search landscape changes constantly. New features launch, algorithms update, and best practices evolve. My newsletter cuts through the noise and delivers only what matters to your campaigns.</p>
-                
-                <p>No spam, no fluff—just valuable insights delivered to your inbox every week.</p>
             </div>
             
             <div class="newsletter-box">
@@ -518,15 +501,6 @@
                 <br>
                 <button class="btn" onclick="subscribeNewsletter()">Subscribe Free</button>
                 <p id="subscribeMessage" style="margin-top: 25px; font-weight: bold;"></p>
-            </div>
-            
-            <div class="content-card">
-                <h3>Recent Newsletter Topics</h3>
-                <p><strong>Week of Jan 6, 2026:</strong> Google Ads Performance Max updates, new Microsoft Ads features, and keyword match type changes</p>
-                <p><strong>Week of Dec 30, 2025:</strong> Year-end PPC trends, 2026 predictions, and budget planning strategies</p>
-                <p><strong>Week of Dec 23, 2025:</strong> Holiday campaign wrap-up, attribution modeling updates, and Q1 planning tips</p>
-                
-                <p><em>Subscribe to receive future newsletters and never miss important paid search updates!</em></p>
             </div>
         </div>
         
@@ -539,872 +513,40 @@
     </footer>
     
     <script>
-        // ARTICLE DATABASE - All 20 articles stored here
         const articles = {
-            1: {
-                title: "Account Structure Best Practices",
-                content: `
-                    <h2>Account Structure Best Practices</h2>
-                    <p>A well-organized account structure is the foundation of successful paid search management. It makes optimization easier, reporting clearer, and scaling more efficient.</p>
-                    
-                    <h3>Why Account Structure Matters</h3>
-                    <p>Poor account structure leads to:</p>
-                    <ul>
-                        <li>Difficulty finding and optimizing specific elements</li>
-                        <li>Wasted time navigating confusing campaign layouts</li>
-                        <li>Challenges with budget allocation and pacing</li>
-                        <li>Messy reporting and performance analysis</li>
-                        <li>Scaling problems as accounts grow</li>
-                    </ul>
-                    
-                    <h3>The Three-Tier Hierarchy</h3>
-                    <p>Google Ads and Microsoft Ads use a three-level structure:</p>
-                    <ul>
-                        <li><strong>Campaigns:</strong> Highest level where you set budgets, locations, ad schedules, and bidding strategies</li>
-                        <li><strong>Ad Groups:</strong> Contain tightly themed keywords and relevant ads</li>
-                        <li><strong>Keywords & Ads:</strong> The actual search terms you bid on and the ads that show</li>
-                    </ul>
-                    
-                    <h3>Campaign Organization Strategies</h3>
-                    <p><strong>By Product/Service:</strong> Separate campaigns for each major product line or service offering. This allows different budgets and strategies per product.</p>
-                    <p><strong>By Geography:</strong> For businesses operating in multiple regions, separate campaigns by location for localized messaging and budget control.</p>
-                    <p><strong>By Match Type:</strong> Some advertisers separate exact match campaigns from broad/phrase to have tighter control over high-intent traffic.</p>
-                    <p><strong>By Funnel Stage:</strong> Brand campaigns, competitor campaigns, generic product searches, and remarketing can each have their own campaigns.</p>
-                    
-                    <h3>Ad Group Best Practices</h3>
-                    <ul>
-                        <li><strong>Keep it tight:</strong> 10-20 closely related keywords per ad group maximum</li>
-                        <li><strong>Theme consistency:</strong> All keywords should trigger the same ads naturally</li>
-                        <li><strong>Single Keyword Ad Groups (SKAGs):</strong> For high-value terms, create dedicated ad groups for maximum relevance</li>
-                        <li><strong>Logical naming:</strong> Use clear, descriptive names that make sense six months later</li>
-                    </ul>
-                    
-                    <h3>Naming Conventions</h3>
-                    <p>Establish consistent naming conventions from day one:</p>
-                    <ul>
-                        <li>Campaign: [Product] - [Match Type] - [Geography]</li>
-                        <li>Example: "Shoes - Exact - Northeast"</li>
-                        <li>Ad Group: [Specific Theme]</li>
-                        <li>Example: "Running Shoes - Blue"</li>
-                    </ul>
-                    
-                    <h3>Common Mistakes to Avoid</h3>
-                    <ul>
-                        <li>Mixing too many themes in one ad group</li>
-                        <li>Creating hundreds of single-keyword ad groups unnecessarily</li>
-                        <li>Inconsistent naming that makes navigation difficult</li>
-                        <li>Not planning for scale from the beginning</li>
-                        <li>Ignoring campaign settings that should vary by campaign type</li>
-                    </ul>
-                    
-                    <h3>When to Restructure</h3>
-                    <p>Consider restructuring when:</p>
-                    <ul>
-                        <li>You're struggling to find specific elements quickly</li>
-                        <li>Budget allocation is difficult to manage</li>
-                        <li>Reporting requires excessive manual work</li>
-                        <li>New products/services don't fit the current structure</li>
-                        <li>Performance data suggests themes are too broad or mixed</li>
-                    </ul>
-                    
-                    <p><em>A clean structure saves hours of work and makes optimization decisions clearer. Invest time upfront to organize properly, and maintenance becomes much easier.</em></p>
-                `
-            },
-            2: {
-                title: "SA360 vs Google Ads: When to Use Each",
-                content: `
-                    <h2>SA360 vs Google Ads: When to Use Each</h2>
-                    <p>Search Ads 360 (SA360) and native Google Ads both manage search campaigns, but they serve different purposes and scale levels. Understanding when to use each platform is crucial for efficiency.</p>
-                    
-                    <h3>What is SA360?</h3>
-                    <p>Search Ads 360 is Google's enterprise search management platform designed for large advertisers managing campaigns across multiple engines (Google, Microsoft, Yahoo Japan, Baidu) from a single interface.</p>
-                    
-                    <h3>Key Differences</h3>
-                    <p><strong>Interface & Workflow:</strong></p>
-                    <ul>
-                        <li>SA360: Enterprise-focused, built for teams managing massive scale</li>
-                        <li>Google Ads: More intuitive for smaller accounts and individual users</li>
-                    </ul>
-                    
-                    <p><strong>Cross-Engine Management:</strong></p>
-                    <ul>
-                        <li>SA360: Manages Google, Microsoft, and other engines in one place</li>
-                        <li>Google Ads: Only manages Google search and display</li>
-                    </ul>
-                    
-                    <p><strong>Reporting:</strong></p>
-                    <ul>
-                        <li>SA360: Advanced custom reporting, cross-engine views, scheduled reports</li>
-                        <li>Google Ads: Standard reports, easier to navigate for basic needs</li>
-                    </ul>
-                    
-                    <p><strong>Automation:</strong></p>
-                    <ul>
-                        <li>SA360: Sophisticated bid strategies, automated rules, and budget management at scale</li>
-                        <li>Google Ads: Smart Bidding and basic automated rules</li>
-                    </ul>
-                    
-                    <h3>When to Use SA360</h3>
-                    <ul>
-                        <li><strong>Multiple search engines:</strong> Managing Google + Microsoft + others</li>
-                        <li><strong>Large budgets:</strong> Spending $100K+/month across engines</li>
-                        <li><strong>Complex reporting needs:</strong> Custom dashboards for executives and clients</li>
-                        <li><strong>Team collaboration:</strong> Multiple users need granular permissions</li>
-                        <li><strong>Advanced automation:</strong> Complex bid rules and budget pacing</li>
-                        <li><strong>Agency management:</strong> Managing many clients from one platform</li>
-                    </ul>
-                    
-                    <h3>When to Use Google Ads</h3>
-                    <ul>
-                        <li><strong>Google-only campaigns:</strong> No need for cross-engine management</li>
-                        <li><strong>Smaller budgets:</strong> Under $50K/month where SA360 overhead isn't justified</li>
-                        <li><strong>Quick setup:</strong> Faster to launch and test campaigns</li>
-                        <li><strong>Direct access to features:</strong> New Google features roll out here first</li>
-                        <li><strong>Simplicity:</strong> Less training needed for new team members</li>
-                    </ul>
-                    
-                    <h3>SA360 Advantages</h3>
-                    <ul>
-                        <li>Unified cross-engine reporting and management</li>
-                        <li>Advanced bid strategies with custom formulas</li>
-                        <li>Floodlight conversion tracking across all engines</li>
-                        <li>Budget management and pacing tools</li>
-                        <li>Executive-level reporting and dashboards</li>
-                    </ul>
-                    
-                    <p><em>Most businesses start with Google Ads and migrate to SA360 once they reach scale or need multi-engine management. There's no wrong choice - pick based on your actual needs.</em></p>
-                `
-            },
-            3: {
-                title: "Keyword Research Strategy",
-                content: `
-                    <h2>Keyword Research Strategy</h2>
-                    <p>Effective keyword research is the foundation of paid search success. The goal is finding terms your target audience searches for that indicate purchase intent.</p>
-                    
-                    <h3>Start with Seed Keywords</h3>
-                    <p>Begin with obvious terms related to your products or services. If you sell running shoes, start with "running shoes," "marathon sneakers," "athletic footwear," etc.</p>
-                    
-                    <h3>Tools for Keyword Research</h3>
-                    <ul>
-                        <li><strong>Google Keyword Planner:</strong> Free tool showing search volume and competition</li>
-                        <li><strong>Search Query Reports:</strong> Your existing campaigns show what people actually search</li>
-                        <li><strong>Competitor Analysis:</strong> See what keywords competitors bid on</li>
-                        <li><strong>Google Autocomplete:</strong> Type seed keywords and see suggestions</li>
-                        <li><strong>Third-party tools:</strong> SEMrush, Ahrefs, SpyFu for deeper insights</li>
-                    </ul>
-                    
-                    <h3>Keyword Intent Categories</h3>
-                    <p><strong>Informational:</strong> "how to choose running shoes" - early research stage</p>
-                    <p><strong>Navigational:</strong> "nike running shoes" - looking for specific brand</p>
-                    <p><strong>Commercial:</strong> "best running shoes 2026" - comparing options</p>
-                    <p><strong>Transactional:</strong> "buy running shoes online" - ready to purchase</p>
-                    
-                    <p>Focus budget on commercial and transactional terms for immediate ROI.</p>
-                    
-                    <h3>Long-Tail vs Short-Tail</h3>
-                    <p><strong>Short-tail:</strong> "shoes" - high volume, expensive, less specific</p>
-                    <p><strong>Long-tail:</strong> "waterproof trail running shoes women size 8" - lower volume, cheaper, highly specific</p>
-                    <p>Long-tail keywords often convert better due to specificity.</p>
-                    
-                    <h3>Building Your Keyword List</h3>
-                    <ul>
-                        <li>Start with 50-100 core terms</li>
-                        <li>Expand with modifiers: colors, sizes, features, brands</li>
-                        <li>Add location terms if relevant: "near me," city names</li>
-                        <li>Include problem-solving phrases: "fix," "solution," "help with"</li>
-                        <li>Don't forget brand + competitor terms</li>
-                    </ul>
-                    
-                    <h3>Evaluating Keywords</h3>
-                    <p>Consider these factors:</p>
-                    <ul>
-                        <li><strong>Search volume:</strong> Enough searches to matter?</li>
-                        <li><strong>Competition:</strong> Can you compete profitably?</li>
-                        <li><strong>Intent:</strong> Are searchers likely to convert?</li>
-                        <li><strong>Relevance:</strong> Does it match what you offer?</li>
-                        <li><strong>Cost:</strong> Is CPC within your budget?</li>
-                    </ul>
-                    
-                    <p><em>Keyword research is ongoing. Review search term reports monthly to discover new opportunities and refine your strategy.</em></p>
-                `
-            },
-            4: {
-                title: "Match Types Explained",
-                content: `
-                    <h2>Match Types Explained</h2>
-                    <p>Match types control how closely a search query must match your keyword for your ad to show. Choosing the right match types balances reach with relevance.</p>
-                    
-                    <h3>The Three Match Types</h3>
-                    
-                    <p><strong>Broad Match</strong></p>
-                    <p>Keywords: running shoes</p>
-                    <p>May show for: athletic sneakers, marathon footwear, jogging trainers, shoe running, how to run faster</p>
-                    <p>Pros: Maximum reach, discovers new keyword opportunities</p>
-                    <p>Cons: Less control, potential irrelevant traffic, higher costs</p>
-                    
-                    <p><strong>Phrase Match</strong></p>
-                    <p>Keywords: "running shoes"</p>
-                    <p>May show for: best running shoes, women's running shoes, buy running shoes online</p>
-                    <p>Won't show for: shoes for running, running sneakers (reordered), shoe running</p>
-                    <p>Pros: Balance between reach and control</p>
-                    <p>Cons: Can still match loosely related terms</p>
-                    
-                    <p><strong>Exact Match</strong></p>
-                    <p>Keywords: [running shoes]</p>
-                    <p>May show for: running shoes, running shoe, shoes for running (close variants)</p>
-                    <p>Won't show for: best running shoes, women's running shoes</p>
-                    <p>Pros: Maximum control, highest relevance, best for proven performers</p>
-                    <p>Cons: Limited reach, may miss variations</p>
-                    
-                    <h3>When to Use Each Match Type</h3>
-                    
-                    <p><strong>Use Broad Match when:</strong></p>
-                    <ul>
-                        <li>Discovering new keywords (with strong negative lists)</li>
-                        <li>Using Smart Bidding with sufficient conversion data</li>
-                        <li>Budget allows for exploration</li>
-                        <li>Landing pages are highly relevant to broad topics</li>
-                    </ul>
-                    
-                    <p><strong>Use Phrase Match when:</strong></p>
-                    <ul>
-                        <li>You want reach but need some control</li>
-                        <li>Capturing variations of proven keywords</li>
-                        <li>Building out new campaigns</li>
-                        <li>Budget is moderate</li>
-                    </ul>
-                    
-                    <p><strong>Use Exact Match when:</strong></p>
-                    <ul>
-                        <li>Bidding on high-performing, proven keywords</li>
-                        <li>Budget is limited</li>
-                        <li>Maximum control is needed</li>
-                        <li>Brand terms or very specific product keywords</li>
-                    </ul>
-                    
-                    <h3>Match Type Strategy</h3>
-                    <p>Many advertisers use a "funnel" approach:</p>
-                    <ul>
-                        <li><strong>Broad Match:</strong> Discovery campaigns, lower bids</li>
-                        <li><strong>Phrase Match:</strong> Mid-funnel, moderate bids</li>
-                        <li><strong>Exact Match:</strong> Proven performers, highest bids</li>
-                    </ul>
-                    
-                    <p>Graduate keywords from broad → phrase → exact as they prove their value.</p>
-                    
-                    <h3>Important Changes</h3>
-                    <p>Google has made match types less restrictive over time. Even exact match now includes close variants, misspellings, and singular/plural forms. Always check search term reports to see actual queries triggering your ads.</p>
-                    
-                    <p><em>The right match type strategy depends on your goals, budget, and risk tolerance. Start conservative (phrase/exact) and expand to broad as you build negative lists and confidence.</em></p>
-                `
-            },
-            5: {
-                title: "Negative Keyword Management",
-                content: `
-                    <h2>Negative Keyword Management</h2>
-                    <p>Negative keywords prevent your ads from showing for irrelevant searches, saving budget and improving efficiency. Proper negative keyword management is essential for profitable campaigns.</p>
-                    
-                    <h3>Why Negative Keywords Matter</h3>
-                    <p>Without negatives, you'll waste money on:</p>
-                    <ul>
-                        <li>Free/cheap/job seekers ("free running shoes")</li>
-                        <li>Wrong products ("basketball shoes" when you sell running shoes)</li>
-                        <li>Wrong intent ("how to draw shoes")</li>
-                        <li>Poor fit searches ("kids shoes" for adult-only inventory)</li>
-                    </ul>
-                    
-                    <h3>Building Your Initial Negative List</h3>
-                    <p><strong>Start with universal negatives:</strong></p>
-                    <ul>
-                        <li>free, cheap, used, rental, job, jobs, career, salary, diy, make, build</li>
-                        <li>download, torrent, pirate, crack, hack, manual, instructions</li>
-                        <li>review, reviews (unless you sell reviews)</li>
-                        <li>porn, xxx, adult (for family-friendly businesses)</li>
-                    </ul>
-                    
-                    <p><strong>Industry-specific negatives:</strong></p>
-                    <p>If you sell products online but don't have physical stores, add: near me, nearby, local, in [city]</p>
-                    <p>If you sell premium products, consider: cheap, discount, affordable, budget</p>
-                    
-                    <h3>Finding Negative Keywords</h3>
-                    <p><strong>Search Terms Report:</strong> Your best source. Review weekly and add negatives for:</p>
-                    <ul>
-                        <li>Zero-conversion searches with multiple clicks</li>
-                        <li>Obviously irrelevant queries</li>
-                        <li>Searches outside your service area</li>
-                        <li>Wrong product categories</li>
-                    </ul>
-                    
-                    <p><strong>Keyword Planner:</strong> Look at related searches for your keywords and identify irrelevant themes.</p>
-                    
-                    <p><strong>Competitor Analysis:</strong> What searches trigger competitor ads that shouldn't? Add as negatives.</p>
-                    
-                    <h3>Negative Match Types</h3>
-                    <ul>
-                        <li><strong>Broad:</strong> "running" blocks "running shoes," "best running" (most aggressive)</li>
-                        <li><strong>Phrase:</strong> "running shoes" blocks "best running shoes" but not "running sneakers"</li>
-                        <li><strong>Exact:</strong> [running shoes] only blocks exact "running shoes"</li>
-                    </ul>
-                    
-                    <p>Tip: Use broad match negatives carefully - they block more than you might think. Phrase and exact are safer.</p>
-                    
-                    <h3>Negative Keyword Lists</h3>
-                    <p>Create shared negative keyword lists for efficiency:</p>
-                    <ul>
-                        <li><strong>Universal negatives:</strong> Apply to all campaigns</li>
-                        <li><strong>Product-specific:</strong> "basketball" negative for running shoe campaigns</li>
-                        <li><strong>Brand negatives:</strong> Competitor brands you don't sell</li>
-                        <li><strong>Geography negatives:</strong> Cities/regions you don't serve</li>
-                    </ul>
-                    
-                    <h3>Negative Keyword Hygiene</h3>
-                    <p>Best practices for ongoing management:</p>
-                    <ul>
-                        <li>Review search terms weekly or bi-weekly</li>
-                        <li>Add negatives at the campaign level for campaign-specific exclusions</li>
-                        <li>Use shared lists for account-wide negatives</li>
-                        <li>Document why you added each negative (helps team members understand)</li>
-                        <li>Periodically audit - negative lists can become overly restrictive</li>
-                    </ul>
-                    
-                    <h3>Common Mistakes</h3>
-                    <ul>
-                        <li>Adding too many broad match negatives that limit reach</li>
-                        <li>Conflicting negatives and keywords (negative "shoes" when bidding on "running shoes")</li>
-                        <li>Not reviewing search terms regularly</li>
-                        <li>Adding negatives to exact match campaigns unnecessarily</li>
-                    </ul>
-                    
-                    <p><em>A well-maintained negative keyword strategy can improve efficiency by 20-40%. It's not glamorous work, but it directly impacts profitability.</em></p>
-                `
-            }
+            1: { title: "Account Structure", content: "<h2>Account Structure Best Practices</h2><p>Coming soon: Complete guide to building scalable account structures.</p>" },
+            2: { title: "SA360 vs Google Ads", content: "<h2>SA360 vs Google Ads</h2><p>Coming soon: When to use each platform.</p>" },
+            3: { title: "Keyword Research", content: "<h2>Keyword Research Strategy</h2><p>Coming soon: How to find high-intent keywords.</p>" },
+            4: { title: "Match Types", content: "<h2>Match Types Explained</h2><p>Coming soon: Broad, phrase, and exact match.</p>" },
+            5: { title: "Negative Keywords", content: "<h2>Negative Keyword Management</h2><p>Coming soon: Eliminate wasted spend.</p>" },
+            6: { title: "Bidding", content: "<h2>Bidding Strategies</h2><p>Coming soon: Manual vs automated bidding.</p>" },
+            7: { title: "Quality Score", content: "<h2>Quality Score</h2><p>Coming soon: Improve QS for lower costs.</p>" },
+            8: { title: "Ad Copy", content: "<h2>Ad Copy Best Practices</h2><p>Coming soon: Write compelling ads.</p>" },
+            9: { title: "Extensions", content: "<h2>Ad Extensions</h2><p>Coming soon: Maximize ad real estate.</p>" },
+            10: { title: "Settings", content: "<h2>Campaign Settings</h2><p>Coming soon: Configure campaigns properly.</p>" },
+            11: { title: "GA4", content: "<h2>GA4 Conversion Tracking</h2><p>Coming soon: Track conversions accurately.</p>" },
+            12: { title: "Budget", content: "<h2>Budget Management</h2><p>Coming soon: Control your ad spend.</p>" },
+            13: { title: "Automation", content: "<h2>Automated Bidding</h2><p>Coming soon: Leverage Smart Bidding.</p>" },
+            14: { title: "PMax", content: "<h2>Performance Max</h2><p>Coming soon: Understand Performance Max.</p>" },
+            15: { title: "Search Terms", content: "<h2>Search Terms Analysis</h2><p>Coming soon: Mine query reports.</p>" },
+            16: { title: "Competition", content: "<h2>Competitive Analysis</h2><p>Coming soon: Research competitors.</p>" },
+            17: { title: "Landing Pages", content: "<h2>Landing Page Optimization</h2><p>Coming soon: Create converting pages.</p>" },
+            18: { title: "Testing", content: "<h2>A/B Testing</h2><p>Coming soon: Run proper tests.</p>" },
+            19: { title: "Pharma", content: "<h2>Regulated Industries</h2><p>Coming soon: Navigate compliance.</p>" },
+            20: { title: "Scaling", content: "<h2>Scaling Campaigns</h2><p>Coming soon: Grow profitably.</p>" }
         };
         
-        // Articles 6-20 (complete content)
-        articles[6] = {
-            title: "Bidding Strategies Deep Dive",
-            content: `
-                <h2>Bidding Strategies Deep Dive</h2>
-                <p>Your bidding strategy determines how much you pay per click and heavily influences campaign performance. Choosing the right strategy depends on your goals, budget, and conversion data.</p>
-                
-                <h3>Manual CPC Bidding</h3>
-                <p>You set maximum CPC bids at the keyword or ad group level. Google won't exceed your max bid.</p>
-                <p><strong>Best for:</strong> New accounts with limited data, testing new campaigns, maintaining strict cost control</p>
-                <p><strong>Pros:</strong> Complete control, predictable costs, good for learning</p>
-                <p><strong>Cons:</strong> Time-intensive, doesn't leverage machine learning, may miss conversion opportunities</p>
-                
-                <h3>Enhanced CPC (ECPC)</h3>
-                <p>Manual bidding with automated adjustments. Google increases bids up to 30% for clicks likely to convert.</p>
-                <p><strong>Best for:</strong> Transition from manual to automated, moderate control with some optimization</p>
-                <p><strong>Pros:</strong> Retains some control while using automation</p>
-                <p><strong>Cons:</strong> Less predictable than pure manual, less powerful than full automation</p>
-                
-                <h3>Target CPA (Cost Per Acquisition)</h3>
-                <p>Set your desired cost per conversion. Google automatically adjusts bids to hit that target on average.</p>
-                <p><strong>Best for:</strong> Lead generation, e-commerce with known target CPA, consistent conversion values</p>
-                <p><strong>Requirements:</strong> 30+ conversions in last 30 days for campaign or portfolio</p>
-                <p><strong>Pros:</strong> Efficient for hitting specific cost targets, leverages machine learning</p>
-                <p><strong>Cons:</strong> May limit volume to hit CPA target, needs sufficient conversion data</p>
-                
-                <h3>Target ROAS (Return on Ad Spend)</h3>
-                <p>Set your desired return on ad spend percentage. Google optimizes bids to hit that ROAS target.</p>
-                <p><strong>Best for:</strong> E-commerce with varying product values, revenue-focused campaigns</p>
-                <p><strong>Requirements:</strong> Conversion value tracking, 50+ conversions in last 30 days</p>
-                <p><strong>Pros:</strong> Optimizes for revenue, not just conversions, great for varied product values</p>
-                <p><strong>Cons:</strong> Requires accurate conversion value tracking, needs substantial data</p>
-                
-                <h3>Maximize Conversions</h3>
-                <p>Google automatically sets bids to get the most conversions within your budget.</p>
-                <p><strong>Best for:</strong> When volume matters more than efficiency, testing new campaigns</p>
-                <p><strong>Pros:</strong> Simple setup, maximizes conversion volume</p>
-                <p><strong>Cons:</strong> Can overspend on expensive clicks, less cost control</p>
-                
-                <h3>Maximize Conversion Value</h3>
-                <p>Similar to Maximize Conversions but optimizes for total conversion value instead of count.</p>
-                <p><strong>Best for:</strong> E-commerce prioritizing revenue over conversion count</p>
-                <p><strong>Pros:</strong> Focuses on highest-value conversions</p>
-                <p><strong>Cons:</strong> Requires conversion value tracking, can ignore lower-value opportunities</p>
-                
-                <h3>Choosing the Right Strategy</h3>
-                <ul>
-                    <li><strong>Just starting:</strong> Manual CPC to learn and gather data</li>
-                    <li><strong>Have 30+ conversions/month:</strong> Target CPA for efficiency</li>
-                    <li><strong>E-commerce with values:</strong> Target ROAS to optimize revenue</li>
-                    <li><strong>Need maximum volume:</strong> Maximize Conversions with budget cap</li>
-                    <li><strong>Tight budget control:</strong> Manual CPC or ECPC</li>
-                </ul>
-                
-                <h3>Bid Strategy Best Practices</h3>
-                <ul>
-                    <li>Don't change strategies frequently - allow 2-3 weeks for learning</li>
-                    <li>Start with conservative targets, then adjust based on performance</li>
-                    <li>Use portfolio bid strategies to share learnings across campaigns</li>
-                    <li>Monitor closely during the learning period</li>
-                    <li>Have realistic expectations - automation needs data to work</li>
-                </ul>
-                
-                <p><em>The best bidding strategy aligns with your business goals and has sufficient data to optimize effectively. Start conservative and evolve as you gather performance data.</em></p>
-            `
-        };
-        
-        articles[7] = {
-            title: "Quality Score Optimization",
-            content: `
-                <h2>Quality Score Optimization</h2>
-                <p>Quality Score is Google's rating (1-10) of your keywords' quality and relevance. Higher Quality Scores lead to lower costs and better ad positions.</p>
-                
-                <h3>Why Quality Score Matters</h3>
-                <ul>
-                    <li>Lower cost per click - better QS = pay less for same position</li>
-                    <li>Better ad positions - compete more effectively</li>
-                    <li>Ad Rank calculation - QS × Bid = Ad Rank</li>
-                    <li>Overall account health indicator</li>
-                </ul>
-                
-                <h3>The Three Components</h3>
-                
-                <p><strong>1. Expected Click-Through Rate (CTR)</strong></p>
-                <p>How likely users are to click your ad when it shows for this keyword.</p>
-                <p>Status: Above Average, Average, Below Average</p>
-                <p><strong>How to improve:</strong></p>
-                <ul>
-                    <li>Write compelling, relevant ad copy</li>
-                    <li>Use the keyword in headlines and descriptions</li>
-                    <li>Test different ad variations</li>
-                    <li>Add ad extensions to increase ad size and appeal</li>
-                    <li>Ensure ads match search intent</li>
-                </ul>
-                
-                <p><strong>2. Ad Relevance</strong></p>
-                <p>How closely your ad matches the user's search intent and keyword.</p>
-                <p>Status: Above Average, Average, Below Average</p>
-                <p><strong>How to improve:</strong></p>
-                <ul>
-                    <li>Create tightly themed ad groups (10-20 related keywords)</li>
-                    <li>Write ads specifically for each ad group's theme</li>
-                    <li>Include the keyword in ad copy naturally</li>
-                    <li>Ensure offer matches what the keyword implies</li>
-                    <li>Remove or reorganize irrelevant keywords</li>
-                </ul>
-                
-                <p><strong>3. Landing Page Experience</strong></p>
-                <p>How relevant, transparent, and easy to navigate your landing page is.</p>
-                <p>Status: Above Average, Average, Below Average</p>
-                <p><strong>How to improve:</strong></p>
-                <ul>
-                    <li>Match landing page content to ad and keyword</li>
-                    <li>Improve page load speed (under 3 seconds)</li>
-                    <li>Make page mobile-friendly</li>
-                    <li>Clear, prominent call-to-action</li>
-                    <li>Easy navigation and transparent information</li>
-                    <li>Relevant, original content</li>
-                    <li>Build trust with reviews, security badges, clear policies</li>
-                </ul>
-                
-                <h3>Checking Your Quality Score</h3>
-                <p>In Google Ads:</p>
-                <ul>
-                    <li>Go to Keywords tab</li>
-                    <li>Add columns: Quality Score, Landing Page Exp., Ad Relevance, Exp. CTR</li>
-                    <li>Review keywords with QS below 5</li>
-                </ul>
-                
-                <h3>Quality Score Optimization Strategy</h3>
-                <p><strong>Priority 1: Fix Below Average components</strong></p>
-                <p>Focus on keywords with any "Below Average" rating first - biggest opportunity for improvement.</p>
-                
-                <p><strong>Priority 2: Improve QS 4-6 keywords</strong></p>
-                <p>These keywords have room for meaningful improvement. Don't obsess over moving 9 to 10.</p>
-                
-                <p><strong>Priority 3: Pause or remove QS 1-3 keywords</strong></p>
-                <p>If you can't improve them, they're costing you money. Remove or restructure.</p>
-                
-                <h3>Common Quality Score Myths</h3>
-                <ul>
-                    <li><strong>Myth:</strong> QS 10 is always the goal → <strong>Reality:</strong> QS 7-8 is usually sufficient</li>
-                    <li><strong>Myth:</strong> Historical QS stays forever → <strong>Reality:</strong> QS updates continuously</li>
-                    <li><strong>Myth:</strong> Display Network affects search QS → <strong>Reality:</strong> Separate QS calculations</li>
-                    <li><strong>Myth:</strong> Pausing keywords resets QS → <strong>Reality:</strong> QS history persists</li>
-                </ul>
-                
-                <h3>The 80/20 of Quality Score</h3>
-                <p>Focus here for fastest improvement:</p>
-                <ul>
-                    <li>Tight ad group themes (biggest impact)</li>
-                    <li>Include keyword in headlines (easy win)</li>
-                    <li>Improve page load speed (technical quick fix)</li>
-                    <li>Add mobile-responsive design (table stakes)</li>
-                </ul>
-                
-                <p><em>Quality Score optimization is ongoing, not a one-time fix. Make incremental improvements and monitor results. Focus on the biggest opportunities first.</em></p>
-            `
-        };
-        
-        articles[8] = {
-            title: "Ad Copy Best Practices",
-            content: `
-                <h2>Ad Copy Best Practices</h2>
-                <p>Compelling ad copy drives clicks and conversions. Great ad copy speaks to user intent, highlights benefits, and includes a clear call-to-action.</p>
-                
-                <h3>Responsive Search Ads (RSA) Structure</h3>
-                <p>RSAs have:</p>
-                <ul>
-                    <li>Up to 15 headlines (30 characters each)</li>
-                    <li>Up to 4 descriptions (90 characters each)</li>
-                    <li>Google tests combinations to find best performers</li>
-                </ul>
-                
-                <h3>Headline Best Practices</h3>
-                
-                <p><strong>Headline 1 & 2: Primary attention grabbers</strong></p>
-                <ul>
-                    <li>Include your main keyword</li>
-                    <li>State primary benefit or offer</li>
-                    <li>Example: "Running Shoes Sale" or "Free Shipping on Shoes"</li>
-                </ul>
-                
-                <p><strong>Headline 3-5: Supporting value propositions</strong></p>
-                <ul>
-                    <li>Additional benefits, features, differentiators</li>
-                    <li>Example: "100+ Styles Available" or "30-Day Returns"</li>
-                </ul>
-                
-                <p><strong>Headline 6+: Variations and tests</strong></p>
-                <ul>
-                    <li>Different angles, emotional appeals, specific features</li>
-                    <li>Price points, brand names, urgency</li>
-                </ul>
-                
-                <h3>Description Best Practices</h3>
-                <ul>
-                    <li>Expand on headlines with more detail</li>
-                    <li>Include secondary keywords naturally</li>
-                    <li>Address pain points or objections</li>
-                    <li>Strong call-to-action</li>
-                    <li>Use all 90 characters when possible</li>
-                </ul>
-                
-                <h3>Proven Ad Copy Formulas</h3>
-                
-                <p><strong>Problem-Solution</strong></p>
-                <p>Headline: "Foot Pain When Running?"</p>
-                <p>Description: "Get proper arch support with our cushioned running shoes. Designed by podiatrists for comfort."</p>
-                
-                <p><strong>Benefit-Focused</strong></p>
-                <p>Headline: "Run Faster, Recover Quicker"</p>
-                <p>Description: "Lightweight running shoes with responsive cushioning. Engineered for performance."</p>
-                
-                <p><strong>Offer-Driven</strong></p>
-                <p>Headline: "40% Off Running Shoes"</p>
-                <p>Description: "Premium running shoes now on sale. Limited time offer. Shop 100+ styles online today."</p>
-                
-                <p><strong>Social Proof</strong></p>
-                <p>Headline: "Rated #1 By Runners"</p>
-                <p>Description: "Join 50,000+ runners who trust our shoes. 4.8-star rating. Free shipping and returns."</p>
-                
-                <h3>Power Words That Drive Clicks</h3>
-                <ul>
-                    <li><strong>Urgency:</strong> Now, Today, Limited Time, Ending Soon, Last Chance</li>
-                    <li><strong>Value:</strong> Free, Save, Sale, Discount, Deal, Exclusive</li>
-                    <li><strong>Quality:</strong> Premium, Professional, Certified, Guaranteed, Trusted</li>
-                    <li><strong>Action:</strong> Get, Shop, Buy, Order, Discover, Start, Try</li>
-                    <li><strong>Benefit:</strong> Fast, Easy, Simple, Quality, Best, Top</li>
-                </ul>
-                
-                <h3>Dynamic Keyword Insertion (DKI)</h3>
-                <p>Syntax: {KeyWord:Default Text}</p>
-                <p>Example headline: "Buy {KeyWord:Running Shoes} Online"</p>
-                <p>When user searches "trail running shoes," ad shows: "Buy Trail Running Shoes Online"</p>
-                <p><strong>Use carefully:</strong> Can create awkward grammar if not tested</p>
-                
-                <h3>What to Include in Your Ads</h3>
-                <ul>
-                    <li><strong>Keywords:</strong> Especially in headlines for relevance</li>
-                    <li><strong>Unique selling proposition:</strong> What makes you different</li>
-                    <li><strong>Benefits over features:</strong> "Stay dry" not "waterproof material"</li>
-                    <li><strong>Pricing (if competitive):</strong> Transparency builds trust</li>
-                    <li><strong>Promotions:</strong> Sales, free shipping, discounts</li>
-                    <li><strong>Call-to-action:</strong> Clear next step (Shop Now, Learn More, Get Quote)</li>
-                    <li><strong>Trust signals:</strong> Reviews, years in business, guarantees</li>
-                </ul>
-                
-                <h3>Common Ad Copy Mistakes</h3>
-                <ul>
-                    <li>Generic, boring copy that sounds like everyone else</li>
-                    <li>Not including the keyword in ad copy</li>
-                    <li>Missing clear call-to-action</li>
-                    <li>Focusing on features instead of benefits</li>
-                    <li>Grammatical errors or typos</li>
-                    <li>Overpromising or misleading claims</li>
-                    <li>Not testing multiple variations</li>
-                </ul>
-                
-                <h3>Ad Copy Testing Strategy</h3>
-                <ul>
-                    <li>Always have at least 3 RSAs per ad group</li>
-                    <li>Test different value propositions, not just wording changes</li>
-                    <li>Let tests run until statistical significance (varies by volume)</li>
-                    <li>Google shows "Ad Strength" rating - aim for "Good" or "Excellent"</li>
-                    <li>Pause low performers, write new tests based on learnings</li>
-                </ul>
-                
-                <p><em>Great ad copy matches user intent, highlights your unique value, and compels action. Test continuously and let performance data guide your creative decisions.</em></p>
-            `
-        };
-        
-        articles[9] = {
-            title: "Ad Extensions Guide",
-            content: `
-                <h2>Ad Extensions Guide</h2>
-                <p>Ad extensions expand your ads with additional information, making them larger and more useful. They improve CTR and provide more reasons to click at no extra cost.</p>
-                
-                <h3>Why Use Ad Extensions</h3>
-                <ul>
-                    <li>Increase ad size and visibility on the page</li>
-                    <li>Improve CTR by 10-15% on average</li>
-                    <li>Provide more information before the click</li>
-                    <li>Better qualify clicks (reducing wasted spend)</li>
-                    <li>No additional cost - you pay CPC only</li>
-                    <li>Improve Ad Rank and Quality Score</li>
-                </ul>
-                
-                <h3>Types of Ad Extensions</h3>
-                
-                <p><strong>Sitelink Extensions</strong></p>
-                <p>Additional links to specific pages on your site below your ad.</p>
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Use 4-6 sitelinks minimum (Google shows up to 4 on desktop, 2 on mobile)</li>
-                    <li>Link to popular pages: product categories, sale pages, about us</li>
-                    <li>Use descriptive text (25 characters) + optional descriptions (35 characters each)</li>
-                    <li>Example: "Women's Shoes | Men's Shoes | Kids' Shoes | Sale"</li>
-                </ul>
-                
-                <p><strong>Callout Extensions</strong></p>
-                <p>Short snippets (25 characters) highlighting key selling points.</p>
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Add 4-6 callouts minimum</li>
-                    <li>Highlight benefits: "Free Shipping," "24/7 Support," "Price Match Guarantee"</li>
-                    <li>Don't duplicate what's in ad copy</li>
-                    <li>Keep them evergreen or update seasonally</li>
-                </ul>
-                
-                <p><strong>Structured Snippet Extensions</strong></p>
-                <p>Preset categories with your specific offerings.</p>
-                <p><strong>Available headers:</strong> Amenities, Brands, Courses, Degree Programs, Destinations, Featured Hotels, Insurance Coverage, Models, Neighborhoods, Service Catalog, Shows, Styles, Types</p>
-                <p><strong>Example:</strong> Brands: Nike, Adidas, New Balance, Brooks, Asics</p>
-                
-                <p><strong>Call Extensions</strong></p>
-                <p>Add phone number to your ads. Especially valuable on mobile.</p>
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Use call tracking numbers to measure performance</li>
-                    <li>Set ad scheduling if you have business hours</li>
-                    <li>Consider mobile-only for immediate needs businesses</li>
-                </ul>
-                
-                <p><strong>Location Extensions</strong></p>
-                <p>Show business address, phone, map marker.</p>
-                <p><strong>Requirements:</strong> Google Business Profile account</p>
-                <p><strong>Best for:</strong> Local businesses with physical locations</p>
-                
-                <p><strong>Price Extensions</strong></p>
-                <p>Display products/services with prices directly in the ad.</p>
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Show 3-8 items with prices</li>
-                    <li>Include "From $X" if prices vary</li>
-                    <li>Link to specific product pages</li>
-                    <li>Great for e-commerce and service businesses</li>
-                </ul>
-                
-                <p><strong>Promotion Extensions</strong></p>
-                <p>Highlight sales and special offers with dates.</p>
-                <p><strong>Use for:</strong> Holiday sales, seasonal promotions, limited-time offers</p>
-                <p><strong>Example:</strong> "25% Off - Black Friday Sale - Ends 11/30"</p>
-                
-                <p><strong>Image Extensions</strong></p>
-                <p>Add images to your search ads (newer feature).</p>
-                <p><strong>Requirements:</strong> Square and landscape images, 1.91:1 ratio</p>
-                <p><strong>Best for:</strong> Visually appealing products, brand recognition</p>
-                
-                <h3>Extension Strategy by Campaign Type</h3>
-                
-                <p><strong>Brand Campaigns:</strong></p>
-                <ul>
-                    <li>Sitelinks to key pages (products, about, contact)</li>
-                    <li>Callouts highlighting differentiators</li>
-                    <li>Structured snippets for product range</li>
-                    <li>Location extensions if applicable</li>
-                </ul>
-                
-                <p><strong>Product Campaigns:</strong></p>
-                <ul>
-                    <li>Price extensions showing range</li>
-                    <li>Image extensions of products</li>
-                    <li>Promotion extensions for sales</li>
-                    <li>Sitelinks to related categories</li>
-                </ul>
-                
-                <p><strong>Service Campaigns:</strong></p>
-                <ul>
-                    <li>Call extensions (especially mobile)</li>
-                    <li>Location extensions for local services</li>
-                    <li>Structured snippets listing services</li>
-                    <li>Callouts for certifications/guarantees</li>
-                </ul>
-                
-                <h3>Setting Up Extensions</h3>
-                <p>Extensions can be added at:</p>
-                <ul>
-                    <li><strong>Account level:</strong> Apply to all campaigns</li>
-                    <li><strong>Campaign level:</strong> Campaign-specific extensions</li>
-                    <li><strong>Ad group level:</strong> Most granular control</li>
-                </ul>
-                <p>Start at account level for universal extensions, add campaign-specific ones as needed.</p>
-                
-                <h3>Extension Performance Monitoring</h3>
-                <ul>
-                    <li>Check "Extensions" tab in Google Ads</li>
-                    <li>Review CTR and click share by extension</li>
-                    <li>Remove low-performing extensions</li>
-                    <li>Test different sitelink destinations</li>
-                    <li>Update promotions and seasonal callouts regularly</li>
-                </ul>
-                
-                <h3>Common Mistakes</h3>
-                <ul>
-                    <li>Not using enough extensions - use all relevant ones</li>
-                    <li>Setting and forgetting - update regularly</li>
-                    <li>Outdated information (expired promotions, wrong hours)</li>
-                    <li>Not customizing extensions by campaign type</li>
-                    <li>Poor sitelink destinations (not relevant to ad)</li>
-                </ul>
-                
-                <p><em>Ad extensions are free additional real estate. Use as many relevant extensions as possible to maximize your ad's footprint and CTR. Update them regularly to keep information current.</em></p>
-            `
-        };
-        
-        articles[10] = {
-            title: "Campaign Settings Breakdown",
-            content: `
-                <h2>Campaign Settings Breakdown</h2>
-                <p>Campaign settings control where, when, and how your ads appear. Proper configuration prevents wasted spend and ensures you reach the right audience.</p>
-                
-                <h3>Networks</h3>
-                
-                <p><strong>Search Network</strong></p>
-                <p>Your ads show on Google search results and search partners.</p>
-                <p><strong>Best practice:</strong> Always include Google search. Consider excluding search partners initially to control quality.</p>
-                
-                <p><strong>Display Network</strong></p>
-                <p>Ads show on millions of websites, videos, and apps.</p>
-                <p><strong>Best practice:</strong> Separate search and display into different campaigns for better control and optimization.</p>
-                
-                <p><strong>Search Partners</strong></p>
-                <p>Include sites like CNN, Amazon, that use Google search tech.</p>
-                <p><strong>Best practice:</strong> Test with and without. Check "Segment by Network" to evaluate performance.</p>
-                
-                <h3>Locations</h3>
-                
-                <p><strong>Target Settings:</strong></p>
-                <ul>
-                    <li><strong>Presence:</strong> People in your targeted location</li>
-                    <li><strong>Presence or Interest:</strong> People in OR interested in your location</li>
-                </ul>
-                
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Use "Presence" for local businesses to avoid tourists/researchers</li>
-                    <li>Use "Presence or Interest" for online businesses targeting interest in a location</li>
-                    <li>Target specific cities/zip codes rather than broad states if serving specific areas</li>
-                    <li>Exclude locations you don't serve to prevent wasted clicks</li>
-                    <li>Use location bid adjustments for high/low value areas</li>
-                </ul>
-                
-                <h3>Languages</h3>
-                <p>Target users based on their Google language setting.</p>
-                <p><strong>Best practice:</strong> Match the language of your ads and landing pages. Create separate campaigns for different languages.</p>
-                
-                <h3>Audiences</h3>
-                
-                <p><strong>Observation mode:</strong> Collect data without restricting reach</p>
-                <p><strong>Targeting mode:</strong> Only show ads to selected audiences</p>
-                
-                <p><strong>Best practice:</strong> Start with observation to gather data, then apply bid adjustments or create targeted campaigns based on performance.</p>
-                
-                <h3>Budget and Bidding</h3>
-                
-                <p><strong>Daily Budget:</strong> Average amount you want to spend per day</p>
-                <p>Note: Google can spend up to 2× your daily budget on high-traffic days, but won't exceed monthly budget (daily × 30.4).</p>
-                
-                <p><strong>Bid Strategy:</strong> How Google optimizes your bids (covered in Bidding Strategies article)</p>
-                
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Set budgets high enough not to limit performance (check "limited by budget" status)</li>
-                    <li>Use shared budgets to optimize spend across related campaigns</li>
-                    <li>Review spend pacing regularly</li>
-                </ul>
-                
-                <h3>Ad Schedule</h3>
-                
-                <p>Control which days and hours your ads show.</p>
-                
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Default to all days/hours initially to gather data</li>
-                    <li>After sufficient data, apply bid adjustments for high/low performing times</li>
-                    <li>Turn off ads during non-business hours if you need immediate response (calls)</li>
-                    <li>Consider timezone differences if serving multiple regions</li>
-                </ul>
-                
-                <h3>Ad Rotation</h3>
-                
-                <p><strong>Optimize:</strong> Google shows best-performing ads more often (default and recommended)</p>
-                <p><strong>Rotate indefinitely:</strong> Rotate ads evenly, good for testing</p>
-                
-                <p><strong>Best practice:</strong> Use "Optimize" unless running specific ad tests.</p>
-                
-                <h3>Start and End Dates</h3>
-                
-                <p>Schedule campaign to run during specific date ranges.</p>
-                
-                <p><strong>Use for:</strong></p>
-                <ul>
-                    <li>Seasonal campaigns (holiday sales)</li>
-                    <li>Event-based campaigns (conference attendance)</li>
-                    <li>Limited-time promotions</li>
-                </ul>
-                
-                <h3>Dynamic Search Ads Settings</h3>
-                
-                <p>Google automatically targets searches based on your website content.</p>
-                
-                <p><strong>Best practices:</strong></p>
-                <ul>
-                    <li>Use for large inventory websites</li>
-                    <li>Monitor search terms closely</li>
-                    <li
-        
-        // Navigation functions
         function showPage(pageName) {
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
-            
-            const navLinks = document.querySelectorAll('nav a');
-            navLinks.forEach(link => link.classList.remove('active'));
-            
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('nav a').forEach(l => l.classList.remove('active'));
             document.getElementById(pageName).classList.add('active');
-            const navLink = document.getElementById('nav-' + pageName);
-            if (navLink) navLink.classList.add('active');
-            
+            const nav = document.getElementById('nav-' + pageName);
+            if (nav) nav.classList.add('active');
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         
-        function showArticle(articleId) {
-            const article = articles[articleId];
+        function showArticle(id) {
+            const article = articles[id];
             if (article) {
                 document.getElementById('article-content').innerHTML = article.content;
                 showPage('article');
@@ -1412,23 +554,19 @@
         }
         
         function subscribeNewsletter() {
-            const emailInput = document.getElementById('emailInput');
-            const email = emailInput.value;
-            const message = document.getElementById('subscribeMessage');
-            
-            if (email && email.includes('@') && email.includes('.')) {
-                message.textContent = '✓ Thank you for signing up for my newsletter! This is currently under maintenance and will be ready to go in June 2026.';
-                message.style.color = '#d4af37';
-                emailInput.value = '';
-                console.log('Email subscribed:', email);
+            const input = document.getElementById('emailInput');
+            const msg = document.getElementById('subscribeMessage');
+            if (input.value && input.value.includes('@')) {
+                msg.textContent = '✓ Thank you for signing up for my newsletter! This is currently under maintenance and will be ready to go in June 2026.';
+                msg.style.color = '#d4af37';
+                input.value = '';
             } else {
-                message.textContent = '✗ Please enter a valid email address.';
-                message.style.color = '#ff6b6b';
+                msg.textContent = '✗ Please enter a valid email address.';
+                msg.style.color = '#ff6b6b';
             }
         }
         
-        // Set initial active nav on page load
-        document.getElementById('nav-about').classList.add('active');
+        showPage('about');
     </script>
 </body>
 </html>
